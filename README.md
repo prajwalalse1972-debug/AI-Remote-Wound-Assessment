@@ -36,7 +36,7 @@ Our system allows users to upload wound images captured using a smartphone. A de
 - Member 1 – Project Lead & Integration
 - Member 2 – Machine Learning Development
 - Member 3 – Data Processing & Research
-- Member 4 - Presentation and 
+- Member 4 - Presentation and code help
 
 ## ⚠️ Disclaimer
 This project is for research and educational purposes only and is not a substitute for professional medical diagnosis.
