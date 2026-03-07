@@ -1,42 +1,94 @@
-# AI-Remote-Wound-Assessment
-AI-powered system that analyzes wound images using deep learning to assess infection risk and enable remote healthcare monitoring.
+# 🩺 WoundAI - Remote Wound Assessment
 
-## 🩺 Overview
-The AI-Powered Remote Wound Assessment System is a smartphone-based healthcare solution that uses artificial intelligence and computer vision to analyze wound images and assess infection risk remotely. The system helps doctors monitor wound healing progression and prioritize patients requiring urgent medical attention.
+A smartphone-based AI web app that assesses wound healing using image analysis, 
+helping doctors remotely monitor infection risks.
 
-## 🎯 Problem Statement
-Chronic wounds and post-surgical injuries require continuous monitoring to prevent infections. Frequent hospital visits are costly and inconvenient, especially for patients in rural or resource-limited areas. There is a need for an accessible remote monitoring solution.
+Built for **Biobytes Hackathon 2026** 🏆
 
-## 💡 Proposed Solution
-Our system allows users to upload wound images captured using a smartphone. A deep learning model analyzes the image and predicts infection risk along with a probability score.
+---
 
-### Key Features
-- Image-based wound infection detection
-- AI-driven risk prediction
-- Remote monitoring support
-- Simple web interface
-- Explainable AI visualization (future scope)
+## 🚀 What it does
+- Upload a wound image from any device
+- AI analyses the wound instantly
+- Provides detailed clinical assessment including:
+  - Wound type identification
+  - Healing stage detection
+  - Infection risk level (Low/Medium/High)
+  - Key clinical observations
+  - Recommendations for the doctor
+- Generates a timestamped patient report
 
-## ⚙️ Tech Stack
-- Python
-- PyTorch
-- OpenCV
-- Streamlit
-- NumPy & Pandas
-- Scikit-learn
+---
 
-## 🧠 Model Approach
-- Transfer Learning using ResNet18
-- Binary Classification:
-  - Infected
-  - Non-Infected
+## 🛠️ Tech Stack
+| Tool | Purpose |
+|------|---------|
+| Python 3.13 | Core programming language |
+| Streamlit | Web app framework |
+| Groq API | Free AI inference platform |
+| Llama 4 Scout | Vision AI model for image analysis |
+| Pillow | Image processing |
 
+---
 
-## 👥 Team Members
-- Member 1 – Project Lead & Integration
-- Member 2 – Machine Learning Development
-- Member 3 – Data Processing & Research
-- Member 4 - Presentation and code help
+## 📁 Project Structure
+```
+WoundAI/
+├── .streamlit/
+│   └── secrets.toml    ← API keys (not uploaded to GitHub)
+├── venv/               ← Virtual environment (not uploaded)
+├── app.py              ← Main application
+├── .gitignore          ← Ignores secrets and venv
+└── README.md           ← This file
+```
+
+---
+
+## ⚙️ How to run locally
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/WoundAI.git
+cd WoundAI
+
+# 2. Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Install dependencies
+pip install streamlit pillow groq
+
+# 4. Add your API key
+# Create .streamlit/secrets.toml and add:
+# GROQ_API_KEY = "your-key-here"
+
+# 5. Run the app
+streamlit run app.py
+```
+
+---
+
+## 🔑 Getting API Keys
+- **Groq API** (Free): https://console.groq.com
+
+---
+
+## 📅 Development Log
+| Day | What was built |
+|-----|---------------|
+| Day 1 | Project setup, virtual environment, Hello World app |
+| Day 2 | Image upload UI, patient name input, sidebar |
+| Day 3 | Groq AI integration, real wound analysis working |
+| Day 4 | Professional report UI, timestamps, medical disclaimer |
+| Day 5 | Infection risk color indicator *(coming soon)* |
+| Day 6 | Patient history tracking *(coming soon)* |
+| Day 7 | PDF report export *(coming soon)* |
+
+---
 
 ## ⚠️ Disclaimer
-This project is for research and educational purposes only and is not a substitute for professional medical diagnosis.
+This app is for educational and assistive purposes only. 
+It does not replace professional medical advice or diagnosis.
+
+git remote add origin https://github.com/yourusername/WoundAI.git
+git branch -M main
+git push -u origin main
