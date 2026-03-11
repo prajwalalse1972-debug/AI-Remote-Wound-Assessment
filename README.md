@@ -3,7 +3,7 @@
 A smartphone-based AI web app that assesses wound healing using image analysis, 
 helping doctors remotely monitor infection risks.
 
-Built for **Biobytes Hackathon 2026** 🏆
+Built for **Synaptix Codethon 2026** 🏆
 
 ---
 
