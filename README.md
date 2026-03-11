@@ -79,9 +79,9 @@ streamlit run app.py
 | Day 2 | Image upload UI, patient name input, sidebar |
 | Day 3 | Groq AI integration, real wound analysis working |
 | Day 4 | Professional report UI, timestamps, medical disclaimer |
-| Day 5 | Infection risk color indicator *(coming soon)* |
-| Day 6 | Patient history tracking *(coming soon)* |
-| Day 7 | PDF report export *(coming soon)* |
+| Day 5 | Infection risk color indicator  |
+| Day 6 | Patient history tracking  |
+| Day 7 | PDF report export  |
 
 ---
 
